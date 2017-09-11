@@ -1,0 +1,29 @@
+{
+  "name": "web-class-server-project",
+  "version": "1.0.0",
+  "description": "Web back-end server project with Node.JS for Web Development Class",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davikawasaki/web-class-server-project.git"
+  },
+  "author": "Davi Kawasaki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davikawasaki/web-class-server-project/issues"
+  },
+  "homepage": "https://github.com/davikawasaki/web-class-server-project#readme",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-load": "^1.1.16",
+    "express-session": "^1.15.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.0"
+  }
+}

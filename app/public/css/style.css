@@ -1,0 +1,271 @@
+/* Clear styles */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    color: #484848;
+    background: #f9f9f9;
+    line-height: 1.28;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+
+div, section {
+    display: block;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #a5473a;
+    border: none;
+}
+
+p {
+    margin: 0;
+    color: #484848;
+    font-size: 1em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4em;
+}
+
+/* Colors */
+
+.primary-text {
+    color: #00d8ff;
+}
+
+/* Navbar */
+
+header.nav-main {
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    height: 3.3em;
+    line-height: 3.3em;
+    box-shadow: 0 0 5px rgba(0,0,0,0);
+    width: 100%;
+    z-index: 1;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 .5em;
+}
+
+.nav-main .nav-home {
+    font-size: 1.5em;
+    line-height: inherit;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.nav-home .nav-logo {
+    display: inline-block;
+}
+
+.nav-home span {
+    padding-left: .3em;
+}
+
+div.nav-lists {
+    display: inline-block;
+    vertical-align: top;
+    height: inherit;
+    width: calc(100% - 10em);
+}
+
+div.nav-lists .nav-site-internal {
+    float: left;
+}
+
+div.nav-lists .nav-site-external {
+    float: right;
+}
+
+.nav-main li {
+    display: inline;
+    font-size: .9em;
+}
+
+.nav-main ul {
+    margin: 0 0 0 .5em;
+}
+
+.nav-main li > a {
+    padding: 0 10px;
+    height: inherit;
+    color: #ddd;
+}
+
+.nav-main li > a:hover {
+    color: #fff;
+}
+
+.nav-lists .nav-site-search input.nav-search {
+    background: transparent url(/img/search.png) no-repeat 10px center;
+    background-size: 16px 16px;
+    height: 2.2em;
+    background-color: #333;
+    color: #fff;
+    border-radius: .2em;
+    padding: 0 10px 0 35px;
+    margin-left: 10px;
+    font-size: 1em;
+    width: 8em;
+    transition: width .2s ease;
+}
+
+.nav-lists .nav-site-search input.nav-search:focus {
+    width: 12em;
+}
+
+/* Banner */
+
+section.banner {
+    min-height: 22em;
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 3.2em;
+}
+
+div.main-title h1 {
+    font-weight: 300;
+}
+
+div.main-subtitle p {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #ddd;
+}
+
+div.banner-buttons {
+    margin-top: 3em;
+}
+
+div.banner-buttons a {
+    font-size: 1.5em;
+    background: #cc7a6f;
+    color: #fafafa;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    margin: 0 12px;
+}
+
+/* About */
+
+section.about div.content {
+    margin: 1.5em 0;
+}
+
+div.row {
+    width: 100%;
+    display: inline-block;
+}
+
+div.row div.col {
+    float: left;
+    margin-left: 2em;
+}
+
+div.row div.col-30 {
+    width: 30%;
+}
+
+div.row div.col:first-child {
+    margin-left: 0;
+}
+
+div.col-30 h3 {
+    color: #2d2d2d;
+    font-size: 1.5em;
+    line-height: 1;
+    font-weight: normal;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 960px) {
+
+    /* Header */
+
+    header.nav-main {
+        position: relative;
+        height: auto;
+    }
+    li.nav-site-search {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        margin: 0 10px;
+    }
+    div.nav-lists {
+        display: flex;
+        display: -ms-flex;
+        width: 100%;
+        margin: 0;
+    }
+    .nav-main .nav-site-external {
+        position: absolute;
+        top: 0;
+        right: 55px;
+        float: none;
+    }
+    .nav-main .nav-site-internal {
+        padding: 0;
+    }
+    .nav-lists .nav-site-search input.nav-search {
+        background-color: transparent;
+        width: 0;
+        cursor: pointer;
+    }
+    .nav-lists .nav-site-search input.nav-search:focus {
+        background-color: #333;
+    }
+
+    /* Banner */
+    section.banner {
+        padding-top: 0;
+        min-height: 18em;
+    }
+
+    div.banner-buttons a {
+        font-size: 1em;
+        margin: 5px;
+    }
+
+    /* Content */
+    div.row div.col-30 {
+        margin: 0;
+        width: 100%;
+    }
+}
