@@ -28,6 +28,12 @@
                     </ul>
                     <ul class="nav-site nav-site-external">
                         <li><a href="https://github.com/facebook/react">GitHub</a></li>
+                        <%if(session.status){%>
+                        <li><a href="/dashboard"><%=session.username%></a></li>
+                        <li><a href="/logout">Logout</a></li>
+                        <%}else{%>
+                        <li><a href="/login">Login</a></li>
+                        <%}%>
                         <li><a href="https://github.com/facebook/react/releases">v15.6.1</a></li>
                     </ul>
                 </div>
