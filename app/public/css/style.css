@@ -14,6 +14,10 @@ html {
     line-height: 1.28;
 }
 
+html.height-100, html.height-100 body, html.height-100 body section.banner {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -27,6 +31,10 @@ div, section {
 
 input {
     border: none;
+    border-radius: .2em;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    padding: .5em;
 }
 
 input:focus {
@@ -48,6 +56,11 @@ p {
 h1 {
     margin: 0;
     font-size: 4em;
+}
+
+label {
+    color: #ddd;
+    padding-right: .5em;
 }
 
 /* Colors */
@@ -169,7 +182,7 @@ div.banner-buttons {
     margin-top: 3em;
 }
 
-div.banner-buttons a {
+div.banner-buttons a, div.banner-buttons input {
     font-size: 1.5em;
     background: #cc7a6f;
     color: #fafafa;
@@ -178,6 +191,7 @@ div.banner-buttons a {
     box-shadow: 1px 3px 3px rgba(0,0,0,0.3);
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     margin: 0 12px;
+    cursor: pointer;
 }
 
 /* About */
@@ -209,6 +223,19 @@ div.col-30 h3 {
     font-size: 1.5em;
     line-height: 1;
     font-weight: normal;
+}
+
+/* Login */
+form.login-form {
+    padding-top: 3em;
+}
+
+form.login-form div {
+    padding: .5em;
+}
+
+form.login-form div p {
+    color: #a5473a;
 }
 
 /* Media Query */
