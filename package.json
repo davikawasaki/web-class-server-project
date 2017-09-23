@@ -17,11 +17,14 @@
   },
   "homepage": "https://github.com/davikawasaki/web-class-server-project#readme",
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "body-parser": "^1.18.0",
+    "consign": "^0.1.6",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
-    "express-load": "^1.1.16",
-    "express-session": "^1.15.5"
+    "express-session": "^1.15.5",
+    "mongoose": "^4.11.11",
+    "q": "^1.5.0"
   },
   "devDependencies": {
     "nodemon": "^1.12.0"
